@@ -30,7 +30,12 @@ const Main = () => {
             post.map(post => {
               return (
                 <>
-                  <Post key={post.id} subtitle={post.category} title={post.title} children={post.resume} >
+                  <Post key={post.id}
+                  subtitle={post.category}
+                  title={post.title}
+                  author={post.author}
+                  date={post.date}>
+                    {post.resume}
                   </Post>
                 </>
               )
